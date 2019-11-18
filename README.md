@@ -73,9 +73,9 @@ This is transsnet company public maven repository.
     <!-- 异步方式接入打点服务 -->
     <appender name="ASYNC" class="com.transsnet.palmplay.logback.AsyncCheckPointAppender">
         <!-- 配置工作线程数，不填，则默认为1，此值不宜设置过大。如果不开启打点，则无需配置此项，否则必填。 -->
-        <workersNum>1</workersNum>
+        <workersNum>5</workersNum>
         <!-- 更改默认的队列大小,默认值为10。此项必填。 -->
-        <queueSize>1000</queueSize>
+        <queueSize>1024</queueSize>
         <!-- 添加附加的appender,有且只能添加一个。此项必填。 -->
         <appender-ref ref="COMMONLOG_ROLLINGFILE"/>
         <!-- 是否开启打点，应用上了生产需开启，应用还在开发或测试可以关闭 ，true为开启，false为关闭。此项必填。 -->
