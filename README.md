@@ -30,7 +30,7 @@ This is transsnet company public maven repository.
 </dependency>
 ```
 
-## How to use some of above dependences:
+## How to use above dependences:
 
 ### checkpoint-log-appender 
 
@@ -72,14 +72,14 @@ This is transsnet company public maven repository.
 
     <!-- 异步方式接入打点服务 -->
     <appender name="ASYNC" class="com.transsnet.palmplay.logback.AsyncCheckPointAppender">
-        <!-- 配置工作线程数，不填，则默认为1，此值不宜设置过大。如果不开启打点，则无需配置此项，否则必填。 -->
-        <workersNum>5</workersNum>
-        <!-- 更改默认的队列大小,默认值为10。此项必填。 -->
-        <queueSize>1024</queueSize>
-        <!-- 添加附加的appender,有且只能添加一个。此项必填。 -->
-        <appender-ref ref="COMMONLOG_ROLLINGFILE"/>
         <!-- 是否开启打点，应用上了生产需开启，应用还在开发或测试可以关闭 ，true为开启，false为关闭。此项必填。 -->
         <active>true</active>
+        <!-- 配置工作线程数，不填，则默认为5，此值不宜设置过大。如果不开启打点，则无需配置此项，否则必填。 -->
+        <workersNum>5</workersNum>
+        <!-- 更改默认的队列大小,默认值为10。此项必填。 -->
+        <queueSize>1000</queueSize>
+        <!-- 添加附加的appender,有且只能添加一个。此项必填。 -->
+        <appender-ref ref="COMMONLOG_ROLLINGFILE"/>
         <!-- 打点服务的路径，不为空。如果不开启打点，则无需配置此项，否则必填。 -->
         <kafkaBootstrapServers>172.31.17.18:9092,172.31.44.173:9092,172.31.63.201:9092</kafkaBootstrapServers>
         <!-- 配置打点后台管理界面上的应用名，非自定义，此值需拷贝。如果不开启打点，则无需配置此项，否则必填。 -->
