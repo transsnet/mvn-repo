@@ -3,10 +3,10 @@
   <groupId>com.transsnet.palmplay</groupId>
   <artifactId>checkpoint-log-appender</artifactId>
   <versioning>
-    <release>1.0.3</release>
+    <release>1.0.4</release>
     <versions>
-      <version>1.0.3</version>
+      <version>1.0.4</version>
     </versions>
-    <lastUpdated>20191118092855</lastUpdated>
+    <lastUpdated>20191121081939</lastUpdated>
   </versioning>
 </metadata>
