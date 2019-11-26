@@ -9,7 +9,7 @@ This is transsnet company public maven repository.
 ```txt
 <repositories>
     <repository>
-        <id>maven-repo-public-releases</id>
+        <id>transsnet-mvn-repo-public-releases</id>
         <url>https://raw.githubusercontent.com/transsnet/mvn-repo/master/releases</url>
     </repository>
     ...
@@ -22,7 +22,7 @@ This is transsnet company public maven repository.
 <dependency>
     <groupId>com.transsnet.palmplay</groupId>
     <artifactId>checkpoint-log-appender</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
 </dependency>
 ```
 
