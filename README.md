@@ -10,11 +10,7 @@ This is transsnet company public maven repository.
 <repositories>
     <repository>
         <id>maven-repo-public-releases</id>
-        <url>https://github.com/transsnet/mvn-repo/tree/master/releases</url>
-    </repository>
-    <repository>
-        <id>maven-repo-public-snapshots</id>
-        <url>https://github.com/transsnet/mvn-repo/tree/master/snapshots</url>
+        <url>https://raw.githubusercontent.com/transsnet/mvn-repo/master/releases</url>
     </repository>
     ...
 </repositories>
