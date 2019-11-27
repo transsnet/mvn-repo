@@ -68,6 +68,11 @@ This is transsnet company public maven repository.
 
     <!-- 异步方式接入打点服务 -->
     <appender name="ASYNC" class="com.transsnet.palmplay.logback.AsyncCheckPointAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
         <!-- 是否开启打点，应用上了生产需开启，应用还在开发或测试可以关闭 ，true为开启，false为关闭。此项必填。 -->
         <active>true</active>
         <!-- 配置工作线程数，不填，则默认为5，此值不宜设置过大。如果不开启打点，则无需配置此项，否则必填。 -->
