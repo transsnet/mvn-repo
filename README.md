@@ -9,12 +9,8 @@ This is transsnet company public maven repository.
 ```txt
 <repositories>
     <repository>
-        <id>maven-repo-public-releases</id>
-        <url>https://github.com/transsnet/mvn-repo/tree/master/releases</url>
-    </repository>
-    <repository>
-        <id>maven-repo-public-snapshots</id>
-        <url>https://github.com/transsnet/mvn-repo/tree/master/snapshots</url>
+        <id>transsnet-mvn-repo-public-releases</id>
+        <url>https://raw.githubusercontent.com/transsnet/mvn-repo/master/releases</url>
     </repository>
     ...
 </repositories>
@@ -26,7 +22,7 @@ This is transsnet company public maven repository.
 <dependency>
     <groupId>com.transsnet.palmplay</groupId>
     <artifactId>checkpoint-log-appender</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
 </dependency>
 ```
 
@@ -72,6 +68,11 @@ This is transsnet company public maven repository.
 
     <!-- 异步方式接入打点服务 -->
     <appender name="ASYNC" class="com.transsnet.palmplay.logback.AsyncCheckPointAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
         <!-- 是否开启打点，应用上了生产需开启，应用还在开发或测试可以关闭 ，true为开启，false为关闭。此项必填。 -->
         <active>true</active>
         <!-- 配置工作线程数，不填，则默认为5，此值不宜设置过大。如果不开启打点，则无需配置此项，否则必填。 -->
