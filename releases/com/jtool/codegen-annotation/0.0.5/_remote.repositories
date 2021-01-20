@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jan 20 11:16:49 CST 2021
+codegen-annotation-0.0.5.jar>jtool-mvn-repository=
+codegen-annotation-0.0.5.pom>jtool-mvn-repository=
+codegen-annotation-0.0.5.jar>palmstore-private-repository=

@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jan 20 11:11:59 CST 2021
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1611111799328
+https\://raw.github.com/JavaServerGroup/jtool-mvn-repository/master/releases/.lastUpdated=1551944340561
+http\://ts0.mycodehub.top\:8081/repository/maven-public/.error=Could not transfer artifact com.jtool\:jtool-validation\:pom\:0.0.3 from/to palmstore-private-repository (http\://ts0.mycodehub.top\:8081/repository/maven-public/)\: ts0.mycodehub.top\:8081 failed to respond
+@default-palmstore-private-repository-http\://ts0.mycodehub.top\:8081/repository/maven-public/.lastUpdated=1611112319882
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1611111798367

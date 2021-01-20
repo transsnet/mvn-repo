@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jan 20 11:16:48 CST 2021
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+https\://raw.github.com/JavaServerGroup/jtool-mvn-repository/master/releases/.lastUpdated=1611112608005
+https\://repo.maven.apache.org/maven2/.lastUpdated=1611112346570
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1611112346161
