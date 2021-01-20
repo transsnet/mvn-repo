@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 21 14:58:40 CST 2019
+commons-0.2.1.jar>my-maven-snapshot-repository=
+commons-0.2.1.jar>maven-releases=
+commons-0.2.1.jar>palmstore-private-repository=
